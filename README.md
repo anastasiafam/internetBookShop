@@ -18,24 +18,24 @@ README — Система рекомендаций книг
 
 2\. Структура проекта
 ---------------------
-project/
-├─ app.py                 # Веб-приложение Streamlit
+project/  
+├─ app.py                   # Веб-приложение Streamlit
 ├─ Dockerfile             # Описание контейнера
-├─ requirements.txt       # Зависимости Python
-├─ scripts/
-│  ├─ train_implicit-kopiia.py  # Обучение content + implicit ALS
-│  └─ train_surprise.py         # Обучение Surprise SVD
-├─ data/
-│  ├─ Users.csv
-│  ├─ Book.csv
-│  └─ Ratings.csv
-├─ models/
-│  ├─ content_model.pkl
-│  ├─ implicit_als_model.pkl
-│  └─ surprise_svd_model.pkl
-└─ metrics/
-   ├─ model_metrics.json        # Метрики ALS
-   └─ surprise_metrics.json     # Метрики SVD
+├─ requirements.txt        # Зависимости Python
+├─ scripts/  
+│  ├─ train_implicit.py    # Обучение content + implicit ALS
+│  └─ train_surprise.py          # Обучение Surprise SVD
+├─ data/  
+│  ├─ Users.csv  
+│  ├─ Book.csv  
+│  └─ Ratings.csv  
+├─ models/  
+│  ├─ content_model.pkl  
+│  ├─ implicit_als_model.pkl  
+│  └─ surprise_svd_model.pkl  
+└─ metrics/  
+   ├─ model_metrics.json          # Метрики ALS
+   └─ surprise_metrics.json       # Метрики SVD
 
 
 3\. Функциональные возможности
